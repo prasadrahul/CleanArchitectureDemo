@@ -1,5 +1,6 @@
 package com.demo.example.core.entities;
 
+// Entities (SRP)
 public class User {
     private String id;
     private String name;

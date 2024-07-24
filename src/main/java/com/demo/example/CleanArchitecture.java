@@ -5,9 +5,12 @@ import com.demo.example.adapters.controllers.UserController;
 import com.demo.example.core.entities.User;
 import com.demo.example.core.usecases.CreateUser;
 import com.demo.example.core.usecases.GetUser;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class CleanArchitecture {
     public static void main(String[] args) {
+
         UserRepositoryImpl userRepository = new UserRepositoryImpl();
         CreateUser createUser = new CreateUser(userRepository);
         GetUser getUser = new GetUser(userRepository);
