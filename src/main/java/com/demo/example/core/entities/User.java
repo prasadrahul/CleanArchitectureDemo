@@ -1,4 +1,4 @@
-package com.demo.example;
+package com.demo.example.core.entities;
 
 public class User {
     private String id;
