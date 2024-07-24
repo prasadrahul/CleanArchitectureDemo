@@ -4,7 +4,7 @@ import com.demo.example.core.entities.User;
 import com.demo.example.core.usecases.interfaces.UserRepository;
 
 public class GetUser {
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public GetUser(UserRepository userRepository) {
         this.userRepository = userRepository;
